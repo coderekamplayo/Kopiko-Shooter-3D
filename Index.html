@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPACE COCKPIT FPS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="game-canvas"></canvas>
+    
+    <div id="hud">
+        <div id="score-display">SCORE: 0</div>
+        <div id="health-bar-container">
+            <div id="health-bar"></div>
+        </div>
+        <div id="mission-info-hud">MISSION 1: Destroy 5 enemies (0/5)</div>
+        <div id="weapon-info">WEAPON: BASIC LVL 1</div>
+        <div id="powerup-info">POWER-UPS: NONE</div>
+    </div>
+    
+    <div id="crosshair">+</div>
+    
+    <div id="dashboard">
+        <div class="dashboard-element" id="speed-indicator">SPEED: 0</div>
+        <div class="dashboard-element" id="altitude-indicator">ALT: 0</div>
+        <div class="dashboard-element" id="target-indicator">TARGETS: 0</div>
+    </div>
+    
+    <div id="start-screen">
+        <h1 id="game-title">SPACE COCKPIT FPS</h1>
+        <p id="game-subtitle">Fly your spaceship, destroy enemies, and complete missions!</p>
+        <button id="start-button">LAUNCH</button>
+    </div>
+    
+    <div id="game-over-screen">
+        <h1 id="game-over-title">MISSION FAILED</h1>
+        <div id="final-score">FINAL SCORE: 0</div>
+        <button id="restart-button">RETRY</button>
+    </div>
+
+    <script src="https://unpkg.com/three@0.159.0/build/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
